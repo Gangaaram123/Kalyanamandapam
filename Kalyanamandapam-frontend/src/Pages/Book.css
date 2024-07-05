@@ -1,0 +1,68 @@
+/* Container Styles */
+.booking-container {
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Card Styles */
+  .booking-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    background: #f2eded; /* White background for cards */
+  }
+  
+  .booking-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .booking-card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+  }
+  
+  .booking-card-body {
+    padding: 20px;
+  }
+  
+  .booking-card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .booking-card-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Button Styles */
+  .booking-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .booking-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* General Body Styles */
+  
+  #book-page h1{
+    color: #f43708;
+    animation: fadeIn 1s ease-in-out;
+  }
+  .book{
+    background-color: rgb(234, 225, 225);
+  }

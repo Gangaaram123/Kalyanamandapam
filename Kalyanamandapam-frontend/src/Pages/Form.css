@@ -1,0 +1,404 @@
+/* Background and Container */
+#imgbg {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 20px 0;
+}
+
+.containerf {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: rgba(163, 184, 157, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Container */
+.form-container {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Title */
+.form-title {
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #f50e0e;
+  margin-bottom: 20px;
+}
+
+/* Form Labels */
+.form-label {
+  font-weight: bold;
+  color: #3c857d;
+}
+
+/* Form Controls */
+.form-control {
+  margin-bottom: 15px;
+  border: 2px solid #DAA520;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.form-control:focus {
+  border-color: #FFD700;
+  box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+/* Buttons */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #DAA520;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: #B8860B;
+  transform: scale(1.05);
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label {
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 25px;
+  position: relative;
+}
+input[type="checkbox"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 2px solid #DAA520;
+  background-color: #fff;
+  border-radius: 3px;
+}
+input[type="checkbox"]:checked + label:before {
+  content: "\2713";
+  font-size: 14px;
+  text-align: center;
+  line-height: 18px;
+  color: #fff;
+  background-color: #DAA520;
+}
+
+/* Radio Buttons */
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"] + label {
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 25px;
+  position: relative;
+  font-weight: bold;
+  color: #3c857d;
+}
+input[type="radio"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 2px solid #DAA520;
+  background-color: #fff;
+  border-radius: 50%;
+}
+input[type="radio"]:checked + label:before {
+  content: "\2022";
+  font-size: 18px;
+  text-align: center;
+  line-height: 18px;
+  color: #DAA520;
+  background-color: #DAA520;
+}
+
+/* List Group Items */
+.list-group-item {
+  background-color: #FFF8DC;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'Roboto, sans-serif';
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item:hover {
+  background-color: #DAA520;
+  color: white;
+}
+
+/* Form Section */
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #DAA520;
+  margin-bottom: 10px;
+}
+
+/* Submit Message */
+.submit-message {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #DAA520;
+  background-color: #FFF8DC;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-family: 'Roboto, sans-serif';
+  font-size: 14px;
+  color: #DAA520;
+}
+
+/* Form Section Wrapper */
+.form-section {
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Links */
+a {
+  color: #DAA520;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #B8860B;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .containerf {
+    padding: 10px;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .list-group-item {
+    padding: 10px 15px;
+  }
+}
+.space{
+  margin-top: 50px;
+}
+
+
+/*new*/
+.room-select-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.room-opt {
+  cursor: pointer;
+  align-items: center;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #DAA520;
+  border-radius: 5px;
+  
+}
+
+.room-opt.selected {
+  background-color: grey;
+  color: black;
+  
+}
+.room-opt.disabled {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+  color: #aaa;
+}
+
+
+.form-check-input {
+  margin-right: 10px;
+}
+.form-check-label {
+  margin-right: 5px;
+}
+.event-type-container {
+  display: flex;
+  align-items: center;
+}
+.event-select {
+  margin-left: 20px;
+  flex-grow: 1;
+}
+
+.form-lab{
+  
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 10px;
+  font-weight: bold;
+  color: #3c857d;
+}
+
+
+/* Main container for the custom calendar */
+.custom-calendar-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container for calendar and room selection */
+.calendar-room-container {
+  display: flex;
+  flex-direction: row; /* Align calendar and room selection horizontally */
+  align-items: flex-start;
+}
+
+/* Container for selected dates and rooms */
+.selected-dates-rooms {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping to the next line */
+  overflow-x: auto; /* Enable horizontal scrolling if necessary */
+  margin-left: 20px; /* Adjust spacing between calendar and room selection */
+}
+
+/* Individual room options container for each date */
+.room-options {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px; /* Adjust spacing between each date column */
+}
+
+/* Grid layout for room selection */
+.room-options-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Five columns */
+  gap: 20px;
+}
+
+/* Individual room option styling */
+.room-option {
+  width: 50px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid #DAA520;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover and selection */
+}
+
+/* Styling for selected room option */
+.room-option.selected {
+  background-color: gray;
+  color: white;
+}
+
+/* Styling for booked room option */
+.room-option.booked {
+  background-color: rgb(255, 0, 0);
+  color: black;
+  cursor: not-allowed;
+}
+
+/* Styling for disabled room option */
+.room-option.disabled {
+  cursor: not-allowed;
+}
+
+/* Hover effect for room options */
+.room-option:hover:not(.selected):not(.disabled) {
+  background-color: #f8f8f8;
+}
+
+/* Custom styles for unavailable and private event dates */
+.unavailable-date,
+.private-event {
+  background-color: red;
+  border-radius: 50%;
+  cursor: not-allowed !important;
+}
+
+.selected-date {
+  background-color: rgb(81, 77, 77) !important;
+  color: white !important;
+}
+
+/* Container for input field and calendar icon */
+.input-container {
+  position: relative;
+  width: auto; /* Adjust the container width as needed */
+}
+
+/* Styling for the calendar icon */
+.calendar-ic {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  right: 380px; /* Adjust as needed */
+  cursor: pointer;
+  z-index: 2; /* Ensure the icon is above the input */
+}
+
+/* Input field styling */
+.form-control {
+  width: 100%;
+  padding-right: 30px; /* Reserve space for the icon */
+  position: relative;
+  z-index: 1; /* Ensure the input is above the icon */
+}
+
+/* Specific styling for the Select Dates input field */
+.select-dates-inp {
+  width: 350px; /* Adjust width as needed */
+}
+
+/* Styling for the date picker wrapper */
+.react-datepicker-wrapper {
+  position: absolute;
+  width: auto; /* Adjust width as needed */
+  top: 100%;
+  left: 0;
+  z-index: 10; /* Ensure the calendar dropdown is above other content */
+}
